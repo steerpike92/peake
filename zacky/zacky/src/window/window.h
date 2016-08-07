@@ -1,19 +1,21 @@
 #pragma once
-#include <GL\glew.h>
 #include <GLFW\glfw3.h>
 
 #include <iostream>
 #include <string>
 
+#include "input.h"
+
 namespace zacky {
-namespace graphics {
+namespace window {
+
 
 class Window {
 public:
 	Window(std::string name, int width, int height);
 	~Window();
 
-	void clear() const;
+	void clear();
 	void update();
 	
 
@@ -22,26 +24,36 @@ public:
 	inline int getHeight() const;
 
 private:
+	//Members
 	std::string name_;
-	static int width_, height_;
+	int width_, height_;
 	GLFWwindow* glfw_window_;
 
+	
+	Input input_;
+
+
+	//Private Methods
 	void initialize();
 
-	friend void WindowResize(GLFWwindow*, int, int);
+	//FRIEND FUNCTIONS
+	//================
+	friend void window_resize_callback(GLFWwindow*, int, int);
 };
 
 
 //INLINE WINDOW METHODS:
 //======================
-
 GLFWwindow* Window::getWindow() const { return glfw_window_; }
-inline int Window::getWidth() const { return width_; }
-inline int Window::getHeight() const { return height_; }
+int Window::getWidth() const { return width_; }
+int Window::getHeight() const { return height_; }
 
 
+//CALLBACK DECLARATIONS
+//======================
+void window_resize_callback(GLFWwindow* window, int width, int height);
 
 
-}// namespace graphics
+}// namespace window
 }// namespace zacky
 

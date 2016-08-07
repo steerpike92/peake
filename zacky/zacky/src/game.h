@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "graphics\window.h"
+#include "window\window.h"
 
 
 namespace zacky {
@@ -13,7 +13,7 @@ public:
 	~Game();
 
 private:
-	graphics::Window window_;
+	window::Window window_;
 
 	void loop();
 };

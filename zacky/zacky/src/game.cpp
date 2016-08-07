@@ -1,6 +1,8 @@
 #include "game.h"
 #include <iostream>
 #include "macros.h"
+
+#include <GL\glew.h>
 #include <GLFW\glfw3.h>
 
 namespace zacky {
@@ -10,8 +12,8 @@ namespace zacky {
 Game::Game():
 	window_("Zacky Window",960, 540)
 {
-	//std::string s = glfwGetVersionString();
-	//std::cout << s << std::endl;
+	std::string s = glfwGetVersionString();
+	std::cout << s << std::endl;
 	loop();
 }
 
@@ -45,7 +47,6 @@ void Game::loop()
 		//glDrawArrays(GL_ARRAY_BUFFER, 0, 6);
 
 		window_.update();
-		glfwPollEvents();
 	}
 }
 
