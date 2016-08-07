@@ -1,10 +1,10 @@
 #pragma once
-#include <GLFW\glfw3.h>
-
 #include <iostream>
 #include <string>
 
-#include "input.h"
+
+struct GLFWwindow;
+
 
 namespace zacky {
 namespace window {
@@ -28,10 +28,6 @@ private:
 	std::string name_;
 	int width_, height_;
 	GLFWwindow* glfw_window_;
-
-	
-	Input input_;
-
 
 	//Private Methods
 	void initialize();

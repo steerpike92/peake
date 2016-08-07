@@ -1,6 +1,9 @@
 #include "window.h"
 #include "../macros.h"
 
+#include <GL\glew.h>
+#include <GLFW\glfw3.h>
+
 namespace zacky { 
 namespace window {
 
@@ -50,20 +53,14 @@ void Window::initialize()
 void Window::clear()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	input_.clear();
-	glfwPollEvents();
-
 }
 
 
 
 void Window::update()
 {
-
-
 	glfwSwapBuffers(glfw_window_);
-	
-
+	glfwPollEvents();
 }
 
 

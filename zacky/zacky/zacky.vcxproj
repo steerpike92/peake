@@ -69,13 +69,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;C:\Users\Zachary\Documents\GitHub\zacky\dependencies\EIGEN;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\dependencies\GLFW\lib-vc2015;$(SolutionDir)..\dependencies\GLEW\lib\Release\Win32;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\intermediates\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;C:\Users\Zachary\Documents\GitHub\zacky\dependencies\EIGEN;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\dependencies\GLFW\lib-vc2015;$(SolutionDir)..\dependencies\GLEW\lib\Release\Win32;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\intermediates\</IntDir>
@@ -133,13 +133,11 @@
   <ItemGroup>
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\window\window.cpp" />
-    <ClCompile Include="src\window\input.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game.h" />
     <ClInclude Include="src\window\window.h" />
-    <ClInclude Include="src\window\input.h" />
     <ClInclude Include="src\macros.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
