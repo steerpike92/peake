@@ -8,7 +8,6 @@
 #include <Eigen\Dense>
 
 
-
 namespace zacky {
 
 
@@ -32,6 +31,8 @@ Game::~Game()
 
 
 
+
+
 void Game::loop()
 {
 	glClearColor(0.2f, 0.1f, 0.8f, 1.0f);
@@ -39,11 +40,7 @@ void Game::loop()
 	while (!glfwWindowShouldClose(window_.getWindow())) {
 		window_.clear();
 
-		glBegin(GL_TRIANGLES);
-		glVertex2d(-0.5f, -0.5f);
-		glVertex2d(0, 0.5f);
-		glVertex2d(0.5f, -0.5f);
-		glEnd();
+
 
 		window_.update();
 	}
