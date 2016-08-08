@@ -18,8 +18,6 @@ Game::Game():
 	std::string s = glfwGetVersionString();
 	std::cout << s << std::endl;
 
-	glfwSwapInterval(1);
-
 	loop();
 }
 
@@ -39,9 +37,7 @@ void Game::loop()
 
 	while (!glfwWindowShouldClose(window_.getWindow())) {
 		window_.clear();
-
-
-
+		
 		window_.update();
 	}
 }
