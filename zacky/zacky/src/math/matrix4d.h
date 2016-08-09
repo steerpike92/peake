@@ -24,7 +24,7 @@ public:
 	std::array<double, 16> getArray() const;
 
 
-	
+
 
 
 	//FRIENDS
