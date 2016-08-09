@@ -22,6 +22,7 @@
     <ProjectGuid>{42D4E5E5-AEB5-4B21-9948-F23BC7480434}</ProjectGuid>
     <RootNamespace>zacky</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>peake</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,13 +70,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;C:\Users\Zachary\Documents\GitHub\zacky\dependencies\EIGEN;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;$(SolutionDir)..\dependencies\EIGEN;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\dependencies\GLFW\lib-vc2015;$(SolutionDir)..\dependencies\GLEW\lib\Release\Win32;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\intermediates\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;C:\Users\Zachary\Documents\GitHub\zacky\dependencies\EIGEN;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\dependencies\GLEW\include;$(SolutionDir)..\dependencies\GLFW\include;$(SolutionDir)..\dependencies\EIGEN;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\dependencies\GLFW\lib-vc2015;$(SolutionDir)..\dependencies\GLEW\lib\Release\Win32;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\intermediates\</IntDir>

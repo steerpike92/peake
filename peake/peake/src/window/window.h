@@ -11,7 +11,7 @@
 struct GLFWwindow;
 
 
-namespace zacky {
+namespace peake {
 namespace window {
 
 
@@ -61,5 +61,5 @@ private:
 
 
 }// namespace window
-}// namespace zacky
+}// namespace peake
 

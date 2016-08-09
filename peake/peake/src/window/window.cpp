@@ -4,7 +4,7 @@
 #include <GL\glew.h>
 #include <GLFW\glfw3.h>
 
-namespace zacky { 
+namespace peake { 
 namespace window {
 
 
@@ -116,4 +116,4 @@ void window_resize_callback(GLFWwindow* window, int width, int height)
 
 
 }// namespace window
-}// namespace zacky
+}// namespace peake

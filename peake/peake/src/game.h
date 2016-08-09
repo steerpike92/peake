@@ -3,7 +3,7 @@
 
 
 
-namespace zacky {
+namespace peake {
 
 class Game
 {

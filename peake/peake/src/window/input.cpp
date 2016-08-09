@@ -1,7 +1,7 @@
 #include "input.h"
 #include "window.h"
 
-namespace zacky {
+namespace peake {
 namespace window {
 
 
@@ -131,4 +131,4 @@ void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 
 
 }// namespace window
-}// namespace zacky
+}// namespace peake

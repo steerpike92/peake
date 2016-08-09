@@ -8,7 +8,7 @@
 #include <Eigen\Dense>
 
 
-namespace zacky {
+namespace peake {
 
 
 
@@ -44,4 +44,4 @@ void Game::loop()
 
 
 
-}//namespace zacky
+}//namespace peake
