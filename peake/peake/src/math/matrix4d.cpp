@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace zacky {
+namespace peake {
 namespace math {
 
 
@@ -118,4 +118,4 @@ Matrix4d & operator<<(Matrix4d & matrix, std::array<double, 16> arr)
 }
 
 }// namespace math
-}// namespace zacky
+}// namespace peake

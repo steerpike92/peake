@@ -5,7 +5,7 @@
 #include <iostream>
 #include <array>
 
-namespace zacky {
+namespace peake {
 namespace math {
 
 typedef double ArrD16[16];
@@ -54,4 +54,4 @@ private:
 
 
 }// namespace math
-}// namespace zacky
+}// namespace peake

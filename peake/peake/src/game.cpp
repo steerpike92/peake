@@ -10,7 +10,7 @@
 #include <iostream>
 #include <array>
 
-namespace zacky {
+namespace peake {
 
 
 
@@ -68,4 +68,4 @@ void Game::loop()
 
 
 
-}//namespace zacky
+}//namespace peake

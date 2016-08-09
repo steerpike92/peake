@@ -2,7 +2,8 @@
 #include "window\window.h"
 
 
-namespace zacky {
+
+namespace peake {
 
 class Game
 {
@@ -15,4 +16,4 @@ private:
 };
 
 
-}//namespace zacky
+}//namespace peake

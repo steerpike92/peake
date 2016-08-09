@@ -24,7 +24,7 @@ int main(int argc, char* args[])
 	glfwSetErrorCallback(error_callback);
 
 	//Game loop entered through constructor
-	zacky::Game game;
+	peake::Game game;
 
 	return 0;
 }
