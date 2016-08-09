@@ -1,4 +1,6 @@
 #pragma once
+#include "input.h"
+
 #include <GL\glew.h>
 #include <GLFW\glfw3.h>
 
@@ -6,7 +8,6 @@
 #include <string>
 #include <array>
 
-#include "input.h"
 
 struct GLFWwindow;
 

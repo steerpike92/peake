@@ -2,7 +2,6 @@
 #include "window\window.h"
 
 
-
 namespace zacky {
 
 class Game
@@ -15,4 +14,5 @@ private:
 	void loop();
 };
 
-}
+
+}//namespace zacky

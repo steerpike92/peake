@@ -1,5 +1,5 @@
 #include "game.h"
-#include <iostream>
+#include "math\math.h"
 #include "macros.h"
 
 #include <GL\glew.h>
@@ -7,6 +7,8 @@
 
 #include <Eigen\Dense>
 
+#include <iostream>
+#include <array>
 
 namespace zacky {
 
@@ -18,6 +20,30 @@ Game::Game():
 	std::string s = glfwGetVersionString();
 	std::cout << s << std::endl;
 
+
+	double arr1[16]{ 1,4,6,2,4,6,7,2,3,1,1,1,0,2,5,1 };
+	
+	math::Matrix4d matrix1(arr1);
+	math::Matrix4d matrix2(2);
+
+
+	math::Matrix4d matrix3;
+
+	matrix3 << arr1;
+
+	double arr2[16];
+	matrix2 >> arr2;
+
+	for (int i = 0; i < 16; i++) {
+		std::cout << arr2[i] << " ";
+	}
+
+
+
+
+	std::cout << std::endl<< matrix3 << std::endl;
+
+		
 	loop();
 }
 
@@ -26,8 +52,6 @@ Game::Game():
 Game::~Game()
 {
 }
-
-
 
 
 
