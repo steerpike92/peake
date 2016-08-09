@@ -266,12 +266,6 @@ paket-files/
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-# currently allowing dlls as it makes for easier cloning
-# *.so
-# *.dylib
-# *.dll
-
 # Fortran module files
 *.mod
 *.smod
